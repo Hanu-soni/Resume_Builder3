@@ -70,13 +70,13 @@ const Home = () => {
     // this is for just heading of our form which whill dynamically change ...
     const FormHeader = ["Personal Info", "Work Experience", "Education Details", "Skills"]
     const DisplayPage = useCallback(() => {
-        if (Page == 0) {
+        if (Page === 0) {
             return <PersonalInfo titleimg={titleimg} Settitleimg={Settitleimg} error={error} Formdata={Formdata} SetFormdata={SetFormdata}></PersonalInfo>
         }
-        else if (Page == 1) {
+        else if (Page === 1) {
             return <Workexperience inputFields={inputFields} setInputFields={setInputFields}></Workexperience>
         }
-        else if (Page == 2) {
+        else if (Page === 2) {
             return <Educationdetails Formdata={Formdata}   SetFormdata={SetFormdata}></Educationdetails>
         }
         else {
