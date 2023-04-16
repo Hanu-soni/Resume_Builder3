@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://Hanu-soni.github.io/Resume_Builder3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "formik": "^2.2.9",
+    "gh-pages": "^5.0.0",
     "git": "^0.1.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
@@ -31,7 +33,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages  -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +57,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "author": "",
   "license": "ISC"
 }
